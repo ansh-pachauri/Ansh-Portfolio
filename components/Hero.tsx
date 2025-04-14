@@ -4,9 +4,11 @@ export const Hero = () => {
   const words = [
     {
       text: "Full",
+      className: "text-white"
     },
     {
       text: "Stack",
+      className: "text-white"
     },
     {
       text: "Developer",
