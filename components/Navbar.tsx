@@ -1,66 +1,91 @@
+"use client";
+
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   IconBrandGithub,
+  IconBrandLine,
+  IconBrandLinkedin,
   IconBrandX,
+  IconCode,
   IconExchange,
   IconHome,
   IconNewSection,
   IconTerminal2,
 } from "@tabler/icons-react";
+import Link from "next/link";
 
 export function Navbar() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const links = [
     {
       title: "Home",
       icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconHome className="h-full w-full text-black" />
       ),
-      href: "#",
-    },
-
-    {
-      title: "Products",
-      icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      href: "#hero",
+      onClick: () => scrollToSection("hero"),
     },
     {
-      title: "Components",
+      title: "Projects",
       icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconTerminal2 className="h-full w-full text-black" />
       ),
-      href: "#",
+      href: "#projects",
+      onClick: () => scrollToSection("projects"),
     },
-    
     {
-      title: "Changelog",
+      title: "Skills",
       icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconCode className="h-full w-full text-black" />
       ),
-      href: "#",
+      href: "#skills",
+      onClick: () => scrollToSection("skills"),
     },
-
     {
-      title: "Twitter",
+      title: "Contact",
       icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandLine className="h-full w-full text-black" />
       ),
-      href: "#",
+      href: "#contact",
+      onClick: () => scrollToSection("contact"),
+    },
+    {
+      title: "Linkedin",
+      icon: (
+        <IconBrandLinkedin className="h-full w-full text-black" />
+      ),
+      href: "https://www.linkedin.com/in/ansh-pachauri-798912250/",
+      onClick: () => window.open("https://www.linkedin.com/in/ansh-pachauri-798912250/", "_blank"),
+    },
+    {
+      title: "X",
+      icon: (
+        <IconBrandX className="h-full w-full text-black" />
+      ),
+      href: "hhttps://x.com/pachauri_ansh03",
+      onClick: () => window.open("https://x.com/pachauri_ansh03", "_blank"),
     },
     {
       title: "GitHub",
       icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandGithub className="h-full w-full text-black" />
       ),
-      href: "#",
+      href: "https://github.com/ansh-pachauri",
+      onClick: () => window.open("https://github.com/ansh-pachauri", "_blank"),
     },
   ];
+
   return (
     <div className="flex items-center justify-center h-[90px] w-full">
       <FloatingDock
-        desktopClassName="translate-y-20" // only for demo, remove for production
+        desktopClassName="translate-y-20"
         items={links}
       />
     </div>

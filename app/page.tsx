@@ -7,10 +7,18 @@ export default function Home() {
   return (
     <>
     <div className="bg-background">
-       <Hero />
-      <Projects />
-      <Myskills />
-      <Contact />
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="skills">
+        <Myskills />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
       <Navbar />
 
     </div>
