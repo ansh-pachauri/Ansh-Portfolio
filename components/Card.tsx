@@ -17,7 +17,7 @@ interface CardProps {
     
     return (
       <div
-        className="w-[300px] h-[300px] bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-purple-500/20 flex flex-col"
+        className="w-[330px] h-[330px] bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-purple-500/20 flex flex-col"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -30,7 +30,7 @@ interface CardProps {
           <div className={`absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent transition-opacity duration-500 ${isHovered ? 'opacity-80' : 'opacity-30'}`} />
         </div>
         
-        <div className="p-5 flex-1 flex flex-col">
+        <div className="p-5 flex-1  flex flex-col">
           <div className="flex justify-between items-center mb-3">
             <h1 className="text-xl font-bold text-white tracking-tight">{title}</h1>
             
