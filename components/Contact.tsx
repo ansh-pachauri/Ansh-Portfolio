@@ -18,9 +18,9 @@ export const Contact = () => {
 
       {/* Subtitle */}
       <p className="text-center text-gray-600 text-base sm:text-lg max-w-2xl px-2 sm:px-0 mb-10">
-        Let's Chat. Have a project in mind?{" "}
+        Let&apos;s Chat. Have a project in mind?{" "}
         <span className="block sm:inline">
-          I'd love to hear from you! Reach out to me, and let's turn your ideas into reality.
+          I&apos;d love to hear from you! Reach out to me, and let&apos;s turn your ideas into reality.
         </span>
       </p>
 

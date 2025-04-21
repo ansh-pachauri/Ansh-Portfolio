@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Spotlight } from "./ui/Spotlight";
 import { TypewriterEffect } from "./ui/typewriter-effect";
 import { motion } from "motion/react";
@@ -32,7 +33,7 @@ export const Hero = () => {
       >
         <div className="flex flex-col items-start justify-start space-y-4 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-            Hi I'm{" "}
+            Hi I&apos;m{" "}
             <span className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
               Ansh Pachauri.
             </span>
@@ -92,10 +93,12 @@ export const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
         >
-          <img
+          <Image
             className="relative w-40 h-40 md:w-60 md:h-60 lg:w-72 lg:h-72 rounded-full object-cover shadow-xl border-1"
             src="/profile.jpg"
             alt="profile"
+            width={256}
+            height={256}
           />
         </motion.div>
       </div>

@@ -8,12 +8,9 @@ import {
   IconBrandLinkedin,
   IconBrandX,
   IconCode,
-  IconExchange,
   IconHome,
-  IconNewSection,
   IconTerminal2,
 } from "@tabler/icons-react";
-import Link from "next/link";
 
 export function Navbar() {
   const scrollToSection = (sectionId: string) => {
@@ -86,6 +83,7 @@ export function Navbar() {
     <div className="flex items-center justify-center h-[90px] w-full">
       <FloatingDock
         desktopClassName="translate-y-20"
+        mobileClassName="translate-x-25"
         items={links}
       />
     </div>

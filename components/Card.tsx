@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ExternalLinkSVG } from "./ui/ExternalLinkSVG";
+import Image from "next/image";
 
 
 interface CardProps {
@@ -21,9 +22,11 @@ interface CardProps {
         onMouseLeave={() => setIsHovered(false)}
       >
         <div className="relative h-[200px] overflow-hidden">
-          <img
+          <Image
             src={image}
             alt={title}
+            width={330}
+            height={330}
             className="w-full h-full object-cover"
           />
           <div className={`absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent transition-opacity duration-500 ${isHovered ? 'opacity-80' : 'opacity-30'}`} />
