@@ -1,4 +1,5 @@
 import { IconBrandGithub, IconBrandGmail, IconBrandLinkedin, IconBrandX } from "@tabler/icons-react";
+import { TypeAnimation } from "react-type-animation";
 
 export const Contact = () => {
   return (
@@ -6,9 +7,13 @@ export const Contact = () => {
       
       {/* Heading */}
       <div className="w-full text-center mb-6">
-        <h1 className="text-3xl sm:text-4xl font-bold text-purple-500">
-          Get In Touch
-        </h1>
+      <TypeAnimation
+        sequence={["Get In Touch", 3000]}
+        wrapper="h1"
+        cursor={false}
+        repeat={Infinity}
+        className="text-3xl sm:text-4xl font-bold text-purple-500"
+      />
       </div>
 
       {/* Subtitle */}

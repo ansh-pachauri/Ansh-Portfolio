@@ -6,18 +6,17 @@ import { ExternalLinkSVG } from "./ui/ExternalLinkSVG";
 
 interface CardProps {
     title: string;
-    description: string;
     image: string;
     link: string;
     tags?: string[];
   }
   
-  export default function Card({ title, description, image, link, tags = [] }: CardProps) {
+  export default function Card({ title, image, link, tags = [] }: CardProps) {
     const [isHovered, setIsHovered] = useState(false);
     
     return (
       <div
-        className="w-[330px] h-[330px] bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-purple-500/20 flex flex-col"
+        className="w-[330px] h-[330px] bg-gradient-to-br from-gray-900 to-gray-950 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-purple-500/20 flex flex-col"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -49,15 +48,15 @@ interface CardProps {
           </div>
           
           <div className="w-16 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full mb-3" />
-          <p className="text-gray-300 text-sm leading-relaxed mb-3 line-clamp-3">{description}</p>
+          
           
           {/* Tags after description */}
           {tags.length > 0 && (
-            <div className="flex flex-wrap gap-2 mt-auto">
+            <div className="flex flex-wrap gap-2 mt-auto ">
               {tags.map((tag, index) => (
                 <span 
                   key={index} 
-                  className="px-2.5 py-1 bg-purple-700/80 text-purple-100 text-xs font-medium rounded-full"
+                  className="px-2.5 py-1 bg-gray-900 text-white text-xs font-medium rounded-md"
                 >
                   {tag}
                 </span>

@@ -1,3 +1,4 @@
+import { TypeAnimation } from "react-type-animation";
 import { MarqueeDemo } from "./MarqueeDemo";
 
 export const Myskills = () => {
@@ -6,9 +7,14 @@ export const Myskills = () => {
       
      
       <div className="w-full text-center mb-4">
-        <h1 className="text-3xl sm:text-4xl font-bold text-purple-500">
-          My Technical Skills
-        </h1>
+      <TypeAnimation
+        sequence={["My Projects", 3000]}
+        wrapper="h1"
+        cursor={false}
+        repeat={Infinity}
+        className="text-3xl sm:text-4xl font-bold text-purple-500"
+      />
+    
       </div>
 
       {/* Marquee Component */}
