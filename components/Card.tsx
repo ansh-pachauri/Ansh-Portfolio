@@ -21,13 +21,14 @@ interface CardProps {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="relative h-[200px] overflow-hidden">
+        <div className="relative h-[200px] w-full overflow-hidden flex items-center justify-center bg-black">
           <Image
             src={image}
             alt={title}
             width={330}
-            height={330}
-            className="w-full h-full object-cover"
+            height={300}
+            className="w-full h-full object-contain"
+            priority
           />
           <div className={`absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent transition-opacity duration-500 ${isHovered ? 'opacity-80' : 'opacity-30'}`} />
         </div>
