@@ -18,10 +18,11 @@ export const Contact = () => {
 
       {/* Subtitle */}
       <p className="text-center text-gray-600 text-base sm:text-lg max-w-2xl px-2 sm:px-0 mb-10">
-        Let&apos;s Chat. Have a project in mind?{" "}
-        <span className="block sm:inline">
-          I&apos;d love to hear from you! Reach out to me, and let&apos;s turn your ideas into reality.
-        </span>
+      Let&apos;s Chat. Got a project idea?{" "}
+      <span className="block sm:inline">
+        I&apos;d love to collaborate! Reach out, and let&apos;s build something amazing together.
+      </span>
+
       </p>
 
       {/* Contact Links */}
@@ -50,6 +51,12 @@ export const Contact = () => {
           icon={<IconBrandX className="h-5 w-5 text-neutral-800 dark:text-neutral-300" />}
           label="X"
         />
+      </div>
+
+      <div className="h-[1px] w-full mt-8 bg-gray-400 my-2 ">
+        <p className="text-center text-white justify-center text-md mt-5 ">
+          Made with ❤️ by Ansh Pachauri 
+        </p>
       </div>
     </div>
   );

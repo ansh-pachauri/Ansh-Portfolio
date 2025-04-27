@@ -8,7 +8,7 @@ export const Myskills = () => {
      
       <div className="w-full text-center mb-4">
       <TypeAnimation
-        sequence={["My Projects", 3000]}
+        sequence={["My Skills", 3000]}
         wrapper="h1"
         cursor={false}
         repeat={Infinity}
