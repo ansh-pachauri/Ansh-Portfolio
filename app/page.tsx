@@ -20,7 +20,7 @@ export default function Home() {
     requestAnimationFrame(raf);
 
     return () => {
-      // optional cleanup if needed
+      
       lenis.destroy();
     };
   }, []);
