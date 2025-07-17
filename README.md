@@ -38,10 +38,12 @@ Follow these steps to run the project locally:
    ```bash
    git clone https://github.com/ansh-pachauri/Ansh-Portfolio.git
    cd Ansh-Portfolio
+   ```
 2.  **Install dependencies**
    ```bash
    pnpm install
-
+   
+   ```
 3. **Start the development server**
    ```bash
    pnpm dev
