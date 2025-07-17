@@ -7,10 +7,10 @@ Welcome to my portfolio! I'm a passionate full-stack developer . This portfolio 
 ## 🚀 Tech Stack
 
 - **Frontend**: React.js, HTML, CSS, Tailwind CSS, JavaScript,Next.js
-- **Backend**: Node.js, Express.js
+- **Backend**: Node.js, Express.js,REST APIS
 - **Database**: MongoDB, MySQL, PostgreSQL
 - **Tools & Libraries**: Git, GitHub, Postman, Zod, JWT, bcrypt, Prisma
-- **Others**: REST APIs, Responsive Design, C, Java, Python
+- **Languages**: JavaScript, TypeScript, Python, Java, C++
 
 
 
@@ -39,7 +39,7 @@ Follow these steps to run the project locally:
    git clone https://github.com/ansh-pachauri/Ansh-Portfolio.git
    cd Ansh-Portfolio
    ```
-2.  **Install dependencies**
+2. **Install dependencies**
    ```bash
    pnpm install
    
