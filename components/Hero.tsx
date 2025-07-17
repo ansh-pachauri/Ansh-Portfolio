@@ -50,7 +50,7 @@ export const Hero = () => {
 
             <div className="flex justify-center md:justify-start">
               <a
-                href="/Resume.pdf"
+                href="/Ansh_Pachauri_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 download="Ansh_Pachauri_Resume.pdf"
